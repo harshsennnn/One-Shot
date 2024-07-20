@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="1shothome.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -171,91 +172,8 @@
         
 </footer>
     </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['One-Shot: Your one stop destination for all engineering resources consolidated in a single platform!'],
-          typeSpeed: 50,
-          
-        });
-
-        const carousel = document.querySelector(".carousel");
-        const arrBtns = document.querySelectorAll(".wrapper i")
-        const firstCardWidth = carousel.querySelector(".cards").offsetWidth;
-        let isDragging = false;
-        arrBtns.forEach(btn =>{
-btn.addEventListener("click", () =>{
- carousel.scrollLeft += btn.id === "left" ? -firstCardWidth : firstCardWidth;
-})
-        });
-        const dragStart = (e) => {
-            isDragging = true;
-            carousel.classList.add("dragging");
-            startX = e.pageX;
-            startScrollLeft = carousel.scrollLeft;
-        }
-        const dragging = (e) =>{
-            if(!isDragging) return;
-            carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-        }
-        const stopDrag = (e) =>{
-            isDragging = false;
-            carousel.classList.remove("dragging");
-        }
-        carousel.addEventListener("mousedown", dragStart);
-        carousel.addEventListener("mousemove", dragging);
-        document.addEventListener("mouseup",stopDrag);
-        carousel.addEventListener("mouseleave", stopDrag); // dragging stops when mouse leaves
-carousel.addEventListener("touchstart", dragStart);
-carousel.addEventListener("touchmove", dragging);
-carousel.addEventListener("touchend", stopDrag);
-
-
-
-
-
-        const carousel2 = document.querySelector(".carousel2");
-const arrBtns2 = document.querySelectorAll(".wrapper2 i");
-const firstCardWidth2 = carousel2.querySelector(".cards2").offsetWidth;
-let isDragging2 = false;
-let startX2, startScrollLeft2;
-
-arrBtns2.forEach(btn => {
-    btn.addEventListener("click", () => {
-        carousel2.scrollLeft += btn.id === "left2" ? -firstCardWidth2 : firstCardWidth2;
-    });
-});
-
-const dragStart2 = (e) => {
-    isDragging2 = true;
-    carousel2.classList.add("dragging");
-    startX2 = e.pageX || e.touches[0].pageX;
-    startScrollLeft2 = carousel2.scrollLeft;
-}
-
-const dragging2 = (e) => {
-    if (!isDragging2) return;
-    const x = (e.pageX || e.touches[0].pageX) - startX2;
-    carousel2.scrollLeft = startScrollLeft2 - x;
-    e.preventDefault(); // default behaviour prevented
-}
-
-const stopDrag2 = () => {
-    isDragging2 = false;
-    carousel2.classList.remove("dragging");
-}
-
-carousel2.addEventListener("mousedown", dragStart2);
-carousel2.addEventListener("mousemove", dragging2);
-carousel2.addEventListener("mouseup", stopDrag2);
-carousel2.addEventListener("mouseleave", stopDrag2); // dragging stops when mouse leaves
-carousel2.addEventListener("touchstart", dragStart2);
-carousel2.addEventListener("touchmove", dragging2);
-carousel2.addEventListener("touchend", stopDrag2);
-
-
-        
-      </script>
+    <script src="back.js"></script>
+    
 </body>
 
 </html>
