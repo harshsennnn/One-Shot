@@ -1,79 +1,80 @@
 * {
-    margin: 0px;
-    padding: 0px;
-
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: rgb(199, 199, 240);
-    color: rgb(0, 0, 0);
-    font-family: "Poppins", sans-serif;
+  background-color: rgb(199, 199, 240);
+  color: rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90px;
-    background-color: rgb(50, 6, 95);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+  background-color: rgb(50, 6, 95);
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    padding-right: 300px;
+  display: flex;
+  justify-content: center;
+  padding-right: 300px;
 }
 
 nav ul li {
-    list-style: none;
-    margin: 0 23px;
-    font-size: 1.5rem;
+  list-style: none;
+  margin: 0 23px;
+  font-size: 1.5rem;
 }
-nav ul li a{
-text-decoration: none;
-color: white;
+nav ul li a {
+  text-decoration: none;
+  color: white;
 }
-nav ul li a:hover{
-color: rgb(182, 182, 246);  transition: color 0.2s;}
+nav ul li a:hover {
+  color: rgb(182, 182, 246);
+  transition: color 0.2s;
+}
 .left {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .sec1 {
-    justify-content: space-around;
-    display: flex;
-      margin: 25px 0;
+  justify-content: space-around;
+  display: flex;
+  margin: 25px 0;
 }
-.sec1 div{
-width: 30%;
+.sec1 div {
+  width: 30%;
 }
 
-.leftsec {margin: 25px 0;
-    font-size: 2.5rem;
- 
+.leftsec {
+  margin: 25px 0;
+  font-size: 2.5rem;
 }
 
 .centersec img {
-    
-    width: 65%;
-padding: 25px;
+  width: 65%;
+  padding: 25px;
 }
-.rightsec img{
-    width: 75%;
+.rightsec img {
+  width: 75%;
 }
-.btn1 button{
-    width: 125px;
-    height: 60px;
-    border-radius: 20px;
-font-size: 15px;
-font-weight: bolder;
-margin: 20px 0 0 99px;
-background-color: rgb(68, 20, 211);
-color: white;
-border-style: solid;
-border-color: rgb(6, 95, 196);
-border: 2px;
-cursor: pointer;}
+.btn1 button {
+  width: 125px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+  margin: 20px 0 0 99px;
+  background-color: rgb(68, 20, 211);
+  color: white;
+  border-style: solid;
+  border-color: rgb(6, 95, 196);
+  border: 2px;
+  cursor: pointer;
+}
 
 /* .btn1-link{
     color: white;
@@ -81,239 +82,242 @@ cursor: pointer;}
     cursor: pointer;
 } */
 
-.btn2 button{
-    border-color: rgb(6, 95, 196);
-    margin: 0 0 0 99px;
-    width: 125px;
-    height: 60px;
-    border-radius: 19px;
-    border: 2px;
-font-size: 15px;
-font-weight: bolder;
-background-color: rgb(68, 20, 211);
-color: white;
-cursor: pointer;   }
-
-.secondsec{
-max-width: 80vw;
-margin: auto;
-margin-top: 5px;
-display: flex;
-align-items: center; justify-content: center;
-padding: 0 35px;
+/* FIX VIDEO COURSES BUTTON */
+#vcourse {
+  color: #fff;
+  text-decoration: none;
 }
 
-.cards  img{
-width: 280px;
-height: 170px;
-object-fit: cover;
-border-radius: 10px;
-align-items: baseline;}
-.carousel :where(.cards, .img){
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.carousel .dragging .cards{
-    cursor: grab;
-    user-select: none;
-}
-.carousel .dragging{
-    scroll-behavior: auto;
-}
-.carousel .cards{
-    scroll-snap-type: none;
-    scroll-snap-align: start;
-list-style: none;
-height: 300px;
-background: rgb(220, 229, 229);
-border-radius: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-cursor: pointer;
+.btn2 button {
+  border-color: rgb(6, 95, 196);
+  margin: 0 0 0 99px;
+  width: 125px;
+  height: 60px;
+  border-radius: 19px;
+  border: 2px;
+  font-size: 15px;
+  font-weight: bolder;
+  background-color: rgb(68, 20, 211);
+  color: white;
+  cursor: pointer;
 }
 
-.cards h2{
-    font-size: 1.25rem;
-    text-align: center;
-    align-items: baseline;
-}
-.wrapper{
-    max-width: 1100px;
-    width: 100%;
-    position: relative;
-}
-.wrapper i{
-    height: 50px;
-    width: 50px;
-    color: black;
-    background-color: white;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-transform: translateY(-50%);
-box-shadow: 0 3px 6px;
-}
-.wrapper i:first-child{
-    left: -22px;
-}
-.wrapper i:last-child{
-    right: -22px;
-}
-.wrapper .carousel{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-gap: 16px;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-scroll-behavior: smooth;
-scrollbar-width: 0;
-}
-.carousel::-webkit-scrollbar{
-    display: none;
-}
-@media screen and (max-width: 900px){
-    .wrapper .carousel{
-        grid-auto-columns: calc((100% / 2) - 9px);
-    }
-}
-@media screen and (max-width: 600px){
-    .wrapper .carousel{
-        grid-auto-columns: 100%;
-    }
-}
-.headlines
-{
-    font-size: 30px;
-    margin-left: 15px;
-}
-.sec3{
-    
-        max-width: 80vw;
-        margin: auto;
-        margin-top: 5px;
-        display: flex;
-        align-items: center; justify-content: center;
-        padding: 0 35px;
-        margin-bottom: 30px;
-        
-        
-}
-.carousel2 .cards2{
-    scroll-snap-type: none;
-    scroll-snap-align: start;
-list-style: none;
-height: 300px;
-background: rgb(223, 223, 228);
-border-radius: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-cursor: pointer;
+.secondsec {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 35px;
 }
 
-.cards2 span{
-    font-size: 1.25rem;
-    text-align: center;
-    align-items: baseline;
+.cards img {
+  width: 280px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  align-items: baseline;
 }
-.wrapper2{
-    max-width: 1100px;
-    width: 100%;
-    position: relative;
+.carousel :where(.cards, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.wrapper2 .carousel2{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3) - 12px);
-gap: 16px;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-scroll-behavior: smooth;
-scrollbar-width: 0;
+.carousel .dragging .cards {
+  cursor: grab;
+  user-select: none;
 }
-.wrapper2 i{
-    height: 50px;
-    width: 50px;
-    color: black;
-    background-color: white;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-transform: translateY(-50%);
-box-shadow: 0 3px 6px;
+.carousel .dragging {
+  scroll-behavior: auto;
 }
-.wrapper2 i:first-child{
-    left: -22px;
+.carousel .cards {
+  scroll-snap-type: none;
+  scroll-snap-align: start;
+  list-style: none;
+  height: 300px;
+  background: rgb(220, 229, 229);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
 }
-.wrapper2 i:last-child{
-    right: -22px;
+
+.cards h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  align-items: baseline;
 }
-.cards2  img{
-width: 280px;
-height: 170px;
-object-fit: cover;
-border-radius: 10px;
-align-items: baseline;}
-.carousel2 :where(.cards, .img){
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
 }
-.carousel2 .dragging .cards{
-    cursor: grab;
-    user-select: none;
+.wrapper i {
+  height: 50px;
+  width: 50px;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px;
 }
-.carousel2 .dragging{
-    scroll-behavior: auto;
+.wrapper i:first-child {
+  left: -22px;
 }
-.carousel2::-webkit-scrollbar{
-    display: none;}
-    footer{
-        background-color: rgb(86, 5, 148);
-    }
-    .foooter{
-        display: flex;
-        height: 230px;
-        justify-content: space-between;
-        
-        
-    }
-    .foooter li{
-        font-size: 17px;
-        padding: 3px;
-        cursor: pointer;
-    }
-    .foooter span{
-        font-size: 30px;
-    }
-    .foooter ul{
-        list-style: none;
-    }
-    .foooter h4{
-        cursor: pointer;
-        
-    }
-    .footer-1 ul li a{
-        color: white;
-        text-decoration: none;
-            }
-        
-    .footer-1 ul li a:hover{
-color: rgb(255, 255, 255);
-transition: color 0.3s;
-    }
-    
-    
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+.headlines {
+  font-size: 30px;
+  margin-left: 15px;
+}
+.sec3 {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 35px;
+  margin-bottom: 30px;
+}
+.carousel2 .cards2 {
+  scroll-snap-type: none;
+  scroll-snap-align: start;
+  list-style: none;
+  height: 300px;
+  background: rgb(223, 223, 228);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.cards2 span {
+  font-size: 1.25rem;
+  text-align: center;
+  align-items: baseline;
+}
+.wrapper2 {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper2 .carousel2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+.wrapper2 i {
+  height: 50px;
+  width: 50px;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px;
+}
+.wrapper2 i:first-child {
+  left: -22px;
+}
+.wrapper2 i:last-child {
+  right: -22px;
+}
+.cards2 img {
+  width: 280px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  align-items: baseline;
+}
+.carousel2 :where(.cards, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel2 .dragging .cards {
+  cursor: grab;
+  user-select: none;
+}
+.carousel2 .dragging {
+  scroll-behavior: auto;
+}
+.carousel2::-webkit-scrollbar {
+  display: none;
+}
+footer {
+  background-color: rgb(86, 5, 148);
+}
+.foooter {
+  display: flex;
+  height: 230px;
+  justify-content: space-between;
+}
+.foooter li {
+  font-size: 17px;
+  padding: 3px;
+  cursor: pointer;
+}
+.foooter span {
+  font-size: 30px;
+}
+.foooter ul {
+  list-style: none;
+}
+.foooter h4 {
+  cursor: pointer;
+}
+.footer-1 ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-1 ul li a:hover {
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+}
